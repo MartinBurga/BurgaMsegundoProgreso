@@ -26,14 +26,17 @@
                 Clicked="Jokes_Clicked"
                 VerticalOptions="Center"
                 FontSize="20"
-                HorizontalOptions="Fill"/>
+                HorizontalOptions="Fill"
+                BackgroundColor="Black"
+                />
             <Button
                 x:Name="About"
                 Text="About"
                 Clicked="About_Clicked"
                 VerticalOptions="Center"
                 FontSize="20"
-                HorizontalOptions="Fill"/>
+                HorizontalOptions="Fill"
+                BackgroundColor="Black"/>
         </VerticalStackLayout>
     </ScrollView>
 
