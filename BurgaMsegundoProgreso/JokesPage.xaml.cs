@@ -8,28 +8,34 @@ public partial class JokesPage : ContentPage
 		InitializeComponent();
 		var httpClient = new HttpClient();
         _jokesService = new JokesService(httpClient);
-		loadJoke();
+		LoadJoke();
     }
 
-	private async Task<> loadJoke()
+    private async Task LoadJoke()
     {
         try
         {
             var joke = await _jokesService.GetRandomJokeAsync();
             if (joke != null)
             {
-                jokeLabel.Text = $"{joke.setup}\n\n{joke.punchline}";
-                se
+                SetupLabel.Text = joke.setup;
+                PunchlineLabel.Text = joke.punchline;
             }
             else
             {
-                jokeLabel.Text = "No joke available at the moment.";
+                SetupLabel.Text = "No hay bromas disponibles.";
+
             }
         }
         catch (Exception ex)
         {
-            jokeLabel.Text = "Error loading joke: " + ex.Message;
+            SetupLabel.Text = "Error loading joke: " + ex.Message;
         }
+    }
+
+    public void ChisteButton_Clicked(object sender, EventArgs e)
+    {
+        LoadJoke();
     }
 
 
