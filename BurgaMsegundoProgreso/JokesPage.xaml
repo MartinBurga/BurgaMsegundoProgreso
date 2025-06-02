@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BurgaMsegundoProgreso.JokesPage"
              Title="JokesPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="20" >
         <Label
             x:Name="SetupLabel"
             Text=""
@@ -26,7 +26,16 @@
             Clicked="ChisteButton_Clicked"
             VerticalOptions="Center"
             FontSize="20"
-            HorizontalOptions="Fill"
+            HorizontalOptions="Center"
             BackgroundColor="Black"/>
+
+        <Button
+            x:Name="Return"
+            Text="Home"
+            Clicked="Return_Clicked"
+            FontSize="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Blue"/>
     </VerticalStackLayout>
 </ContentPage>

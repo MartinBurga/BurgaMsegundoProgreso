@@ -38,5 +38,8 @@ public partial class JokesPage : ContentPage
         LoadJoke();
     }
 
-
+    private void Return_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync();
+    }
 }
