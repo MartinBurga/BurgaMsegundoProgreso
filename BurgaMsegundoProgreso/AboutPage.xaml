@@ -14,32 +14,42 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <BoxView Color="AliceBlue" />
-        <Label Text="Row 0, Column 0"
+        <Label Text="Nombre: Martin Burga"
                HorizontalOptions="Center"
-               VerticalOptions="Center" />
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="40"
+               />
         <BoxView Grid.Column="1"
-                 Color="AliceBlue" />
+                 Color="AliceBlue" 
+                 />
         <Label Grid.Column="1"
-               Text="Row 0, Column 1"
+               Text="Fecha: 02/06/2025"
                HorizontalOptions="Center"
                VerticalOptions="Center" 
-               TextColor="Black"/>
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="40"/>
         <BoxView Grid.Row="1"
                  Color="AliceBlue" />
         <Label Grid.Row="1"
-               Text="Row 1, Column 0"
+               Text="Intereses: Tecnologia, juegos y musica"
+               FontSize="40"
                HorizontalOptions="Center"
                VerticalOptions="Center" 
-               TextColor="Black"/>
+               TextColor="Black"
+               FontAttributes="Bold"/>
         <BoxView Grid.Row="1"
                  Grid.Column="1"
                  Color="AliceBlue"/>
         <Label Grid.Row="1"
                Grid.Column="1"
-               Text=" "
+               Text="Version: 1.0"
                TextColor="Black"
+               FontSize="40"
                HorizontalOptions="Center"
-               VerticalOptions="Center" />
+               VerticalOptions="Center" 
+               FontAttributes="Bold"/>
 
     </Grid>
 </ContentPage>
